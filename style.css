@@ -1,0 +1,174 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.white {
+    color: aliceblue;
+
+}
+
+.gamecontainer {
+    /* background-color: rgb(26, 10, 237); */
+    display: flex;
+    justify-content: center;
+    padding: 5% 5%;
+    /* position: relative; */
+
+}
+
+
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 20vh);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+
+.boxes div {
+
+    font-size: 4vw;
+    padding: 0px 4px;
+    cursor: pointer;
+
+}
+
+.boxes div:hover {
+    background-color: #37323c;
+    border-radius: 260px;
+    width: 100px;
+    border: 2px solid rgb(102, 99, 95);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px solid papayawhip;
+}
+
+
+.game-info {
+    padding: 0 34px;
+
+}
+
+.imgbox img {
+    width: 0;
+}
+
+
+.br-0n {
+    border-right: 0px;
+}
+
+.bl-0n {
+    border-left: 0px;
+}
+
+.bb-0n {
+    border-bottom: 0px;
+}
+
+.bt-0n {
+    border-top: 0px;
+}
+
+.btn2 {
+    margin: 12px 12px;
+}
+
+.well {
+    font-family: cursive;
+    font-size: 4rem;
+}
+
+.line{
+    background: rgb(125, 38, 186);
+    position: absolute;
+    width: 0;
+    height: 8px;
+    left: 147px!important;
+    border-radius: 12px;
+    /* transform: translate(15vw, 13vw) rotate(180deg); */
+}
+.lines{
+    background: #212529;
+    position: absolute;
+    width: 0;
+    height: 8px;
+    left: 147px!important;
+    border-radius: 12px;
+    /* transform: translate(15vw, 13vw) rotate(180deg); */
+}
+
+@media screen and (max-width: 1000px) {
+    .lines{
+        background: rgb(125, 38, 186);
+        position: absolute;
+        width: 0vw;
+        height: 8px;
+        left: 147px!important;
+        border-radius: 12px;
+        /* transform: translate(15vw, 13vw) rotate(180deg); */
+    }
+
+    .line{
+        background-color: #212529;
+    }
+
+    .gamecontainer {
+        flex-wrap: wrap;
+        padding: 126px 0;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 10vh);
+
+    }
+
+    .well {
+        font-family: cursive;
+        font-size: 29px;
+        position: absolute;
+        top: 10%;
+        left: 34px;
+    }
+
+    .info {
+        position: absolute;
+        top: 59%;
+        left: 149px;
+    }
+
+    .btn2 {
+        position: absolute;
+        top: 65%;
+        left: 135px;
+        height: 52px;
+        width: 104px;
+    }
+
+    .game-info {
+        padding: 0 0;
+
+    }
+
+    .imgbox img {
+        width: 50%;
+        position: absolute;
+        left: 25%;
+    }
+
+    .boxes div {
+        font-size: 7vw;
+    }
+}
